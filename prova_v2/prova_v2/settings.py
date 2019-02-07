@@ -25,7 +25,7 @@ SECRET_KEY = 'q*_mf=(bzqu(64j0g6+ukuv1gjp$mo($mqas!!b1w$b-b+-t1='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1',' .pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','damapu.pythonanywhere.com']
 
 
 # Application definition
