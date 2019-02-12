@@ -5,15 +5,12 @@ html
 		div
 			h1
 				a(href='/') Proves blog django
+		{% for post in posts %}
 		div
-			p published: 11.02.2019
-			h2
-				a(href='') My first post
 			p
-				|text random llarg en que s'explica la vida com passa i passa arreu de tot i si segueixo aixi no se que passa
-		div
-			p publicat: 11.02.2019
-			h2
-				a(href='') My second post
+				publicado: {{ post.published_date }}
+			h1
+				a(href=""){{post.title}}
 			p
-				| tracatri tracatru, aqui lo escribu iu.
+				{{post.text|linebreaksbr}}
+		{% endfor %}

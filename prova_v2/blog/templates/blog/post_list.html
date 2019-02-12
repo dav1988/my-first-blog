@@ -6,16 +6,13 @@
   <body>
     <div>
       <h1><a href="/">Proves blog django</a></h1>
-    </div>
+    </div>{% for post in posts %}
     <div>
-      <p>published: 11.02.2019</p>
-      <h2><a href="">My first post</a></h2>
-      <p>text random llarg en que s'explica la vida com passa i passa arreu de tot i si segueixo aixi no se que passa</p>
-    </div>
-    <div>
-      <p>publicat: 11.02.2019</p>
-      <h2><a href="">My second post</a></h2>
-      <p>tracatri tracatru, aqui lo escribu iu.</p>
-    </div>
+      <p>
+        <publicado>{{ post.published_date }}</publicado>
+      </p>
+      <h1><a href="">{{post.title}}</a></h1>
+      <p>{{post.text|linebreaksbr}}</p>
+    </div>{% endfor %}
   </body>
 </html>
