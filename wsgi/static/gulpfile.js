@@ -22,7 +22,7 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('sass',function() {
     return gulp.src('./scss/*scss')
 	.pipe(sass())
-	.pipe(gulp.dest('./css'))
+	.pipe(gulp.dest('../../prova_v2/blog/static/css'))
 });
 
 
@@ -37,6 +37,6 @@ gulp.task('jade',function() {
 
 
 gulp.task('default', function() {
-    gulp.watch(['./client/**/*.jade'],['jade']);
+    gulp.watch(['./jade/*.jade'],['jade']);
 
 });
